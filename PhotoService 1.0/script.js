@@ -55,8 +55,6 @@ getData('https://api.unsplash.com/search/photos?query=cats&client_id=156d988dd84
 
     for (key in photoArray) {
         makePhoto(photoArray[key].urls.regular, '.gallery1');
-        const img = document.querySelector('.img')      
-        clickImg(img);
     }
     console.log(imgArray);
     
