@@ -1,0 +1,131 @@
+.header {
+    background: white;
+}
+
+.h1-head {
+    font-weight: bold;
+    font-size: 42px;
+    color: #1547E9;
+    line-height: 1.5; 
+}
+
+.h2-head {
+    font-weight: bold;
+    font-size: 67px;
+    color: #E4E4E4;
+    line-height: 0.5;
+    padding-bottom: 15px;
+}
+
+.reg-form {
+    background: url("../img/bg-mountian.jpg") no-repeat;
+    background-size: cover;
+    height: 85.1vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.reg-form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background: url("../img/log-bg.png") no-repeat ;
+    background-size: cover;
+    width: 592px;
+    height: 500px;
+}
+
+.reg-h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.reg-form-wrap input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px white solid;
+    background: none;
+    width: 420px;
+    margin-top: 45px;
+    
+}
+
+.reg-form-wrap input::placeholder {
+    color: white;
+}
+
+.button-reg {
+    border-radius: 45px;
+    background: #0080FF;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.button-p {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.text-link {
+    font-size: 26px;
+    color: white;
+    margin: 20px auto;
+}
+
+.reg {
+    color: white;
+    
+}
+.reg:hover {
+    color: white;
+    text-decoration: none;
+ 
+}
+
+.div-foot {
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 560px) {
+    .h1-head {
+        font-size: 30px;
+    }
+    .h2-head {
+        font-size: 40px;
+    }
+    .reg-form-wrap {
+        background: url('../img/log-bg-phone.png');
+        width: 100%;
+        height: 85.1vh;
+        padding-top: 100px;
+    }
+
+    .reg-h1 {
+        font-size: 50px;
+    }
+    .reg-form-wrap input {
+        width: 290px;
+        margin-top: 20px;
+    }
+    .button-reg {
+        width: 240px;
+        height: 50px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+   }
