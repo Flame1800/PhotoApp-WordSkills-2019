@@ -272,16 +272,169 @@ a {
 .container-alboms{
     display: flex;
     flex-wrap: wrap;
+    padding-right: 8%;
 }
 
 .alboms {
     min-width: 300px;
     height: 200px;
-    background: #b5b5b5;
-    margin: 50px;
+    margin: 30px;
     border-radius: 15px;
 }
 
+.albom1 {
+    min-width: 300px;
+    height: 200px;
+    background: url("https://s1.1zoom.me/big0/598/313032-Lastochka.jpg");
+    background-size: cover;
+}
+
+.albom2 {
+    min-width: 300px;
+    height: 200px;
+    background: url("https://wallbox.ru/wallpapers/main/201151/koshki-f60c1e13bc32.jpg");
+    background-size: cover;
+}
+
+.albom3 {
+    min-width: 300px;
+    height: 200px;
+    background: url("https://media.kg-portal.ru/tv/h/humans/images/humans_10.jpg");
+    background-size: cover;
+}
+
+.albom4 {
+    min-width: 300px;
+    height: 200px;
+    background: url("https://www.zastavki.com/pictures/1920x1200/2009/Drawn_wallpapers_junior_artist_World_016614_.jpg");
+    background-size: cover;
+}
+
+.albom5 {
+    min-width: 300px;
+    height: 200px;
+    background: url("https://losko.ru/wp-content/uploads/2014/09/Project_logo_02.png");
+    background-size: cover;
+}
+
+
+
 .title--albom {
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 40px;
+    background: #d0d0d0;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-photos-bg {
+    background: url(./img/our-photos.png) no-repeat;
+    background-size: cover;
+}
+
+.container-our-photos {
+    display: none;
+}
+
+.title--message {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.text--message {
+    margin-left: 20px;
+    max-width: 650px;
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.btn-our-photos {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #333300;
+    background: #e2eba3;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.togle-button {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: none;
+        margin-top: 40px;
+        background: #fff;
+        height: 100vh;
+    }
+
+    .item--header2 {
+        padding: 10px;
+        margin: 0;
+        font-size: 10px;
+        margin-right: 60px;
+    }
+    .item--header {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .head--wrapper {
+        margin: 0;
+    }
+
+    .content {
+        margin: 0;
+        padding: 4px;
+        padding-left: 20px;
+    }
+
+    .photo {
+        width: 80px;
+        height: 60px;
+        margin: 5px;
+    }
+    .photo-container {
+        margin: 0;
+    }
+
+    .separator {
+        font-size: 20px;
+        width: 100px;
+        margin-bottom: 30px;
+    }
+
+    .togle-button {
+        display: block;
+        border-right: 1px solid black ;
+        height: 40px;
+        margin-right: 50px;
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px;
+    }
+
+    .togle-menu {
+        display: block;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    .logo {
+        color: #acac00;
+        text-align: center;
+    }
 }

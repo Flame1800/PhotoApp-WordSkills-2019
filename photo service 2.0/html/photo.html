@@ -11,7 +11,7 @@
 
 <body>
     <div class="main-container">
-        <section class="menu">
+        <section class="menu togle-menu">
             <div class="logo-menu">
                 RUSSIAN <br>
                 TECHNOLOGIES
@@ -45,6 +45,9 @@
 
             <section class="header">
                 <div class="head--wrapper">
+                    <a href="#" class="togle-button">
+                        |||
+                    </a>
                     <a href="photo.html" class="item--header">ФОТО</a>
                     <a href="alboms.html" class="item--header">АЛЬБОМЫ</a>
                     <a href="our-photos.html" class="item--header2">ОБЩИЕ ФОТО</a>
@@ -56,7 +59,7 @@
                     </span>
 
                     <div class="photo-container photo-container1"></div>
-                    
+
                     <span class="separator">
                         Отдых
                     </span>
@@ -76,7 +79,22 @@
         </div>
     </div>
 
-    <script src="../scrtipt.js"></script>
+    <script src="../photos-api.js"></script>
+    <script>
+        const togleBtn = document.querySelector('.togle-button');
+        const menu = document.querySelector('.menu');
+        const togleClose = document.querySelector('.togle-close')
+        let flag = false;
+
+        menu.classList.remove('togle-menu')
+
+        togleBtn.onclick = () => {
+            menu.classList.toggle('togle-menu')
+        }
+
+        
+
+    </script>
 </body>
 
 </html>

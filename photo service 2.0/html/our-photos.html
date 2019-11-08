@@ -53,33 +53,56 @@
                     <a href="our-photos.html" class="item--header2">ОБЩИЕ ФОТО</a>
                 </div>
 
-                <section class="content">
-                    <div class="container-alboms">
-                        <a href="" class="albom1 alboms"><span class="title--albom">СОБАКИ</span></a>
-                        <a href="" class="albom2 alboms"><span class="title--albom">КОШКИ</span></a>
-                        <a href="" class="albom3 alboms"><span class="title--albom">ЛЮДИ</span></a>
-                        <a href="" class="albom4 alboms"><span class="title--albom">РИСУНКИ</span></a>
-                        <a href="" class="albom5 alboms"><span class="title--albom">ПРОЕКТЫ</span></a>
+                <section class="content our-photos-bg">
+                    <div class="message">
+                        <div class="title--message">У вас еще нет общих фото.</div>
+                        <div class="text--message">
+                                Вы можете создать их если пригасите друзей в общий доступ, который находиться в левом меню, 
+                                или вас могут в него кто-нибудь пригласить.
+                        </div>
+                        <a href="#" class="btn-our-photos">Создать общий доступ</a>
+                    </div>
+
+                    <div class="container-our-photos">
+                            <span class="separator">
+                                    Пейзаж
+                                </span>
+            
+                                <div class="photo-container photo-container1"></div>
+                                
+                                <span class="separator">
+                                    Отдых
+                                </span>
+            
+                                <div class="photo-container photo-container2"></div>
+            
+                                <span class="separator">
+                                    Животные
+                                </span>
+            
+                                <div class="photo-container photo-container3"></div>
                     </div>
                 </section>
             </section>
         </div>
     </div>
+
+    <script src="../async-scripts.js"></script>
     <script>
-        const togleBtn = document.querySelector('.togle-button');
-        const menu = document.querySelector('.menu');
-        const togleClose = document.querySelector('.togle-close')
-        let flag = false;
-
-        menu.classList.remove('togle-menu')
-
-        togleBtn.onclick = () => {
-            menu.classList.toggle('togle-menu')
-        }
-
-
-
-    </script>
+            const togleBtn = document.querySelector('.togle-button');
+            const menu = document.querySelector('.menu');
+            const togleClose = document.querySelector('.togle-close')
+            let flag = false;
+    
+            menu.classList.remove('togle-menu')
+    
+            togleBtn.onclick = () => {
+                menu.classList.toggle('togle-menu')
+            }
+    
+            
+    
+        </script>
 </body>
 
 </html>
