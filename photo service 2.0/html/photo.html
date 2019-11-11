@@ -50,10 +50,13 @@
                     </a>
                     <a href="photo.html" class="item--header">ФОТО</a>
                     <a href="alboms.html" class="item--header">АЛЬБОМЫ</a>
-                    <a href="our-photos.html" class="item--header2">ОБЩИЕ ФОТО</a>
+                    <a href="our-photos.html" class="item--header2">ЛЕНТА</a>
                 </div>
 
                 <section class="content">
+                        <div class="photo-modal">
+                            <img src="https://sun1-84.userapi.com/c858220/v858220148/d9f4d/HOowEQ69fN0.jpg" alt="">
+                            </div>
                     <span class="separator">
                         Пейзаж
                     </span>
@@ -73,28 +76,13 @@
                     <div class="photo-container photo-container3"></div>
                 </section>
             </section>
-
-
+            
 
         </div>
     </div>
 
     <script src="../photos-api.js"></script>
-    <script>
-        const togleBtn = document.querySelector('.togle-button');
-        const menu = document.querySelector('.menu');
-        const togleClose = document.querySelector('.togle-close')
-        let flag = false;
-
-        menu.classList.remove('togle-menu')
-
-        togleBtn.onclick = () => {
-            menu.classList.toggle('togle-menu')
-        }
-
-        
-
-    </script>
+    <script src="../scripts.js"></script>
 </body>
 
 </html>

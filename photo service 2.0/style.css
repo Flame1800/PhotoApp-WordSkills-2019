@@ -41,6 +41,7 @@ a {
     height: 50px;
     border-radius: 10px;
     margin-top: 25px;
+    outline: none;
 }
 
 .reg-window::placeholder {
@@ -85,6 +86,7 @@ a {
     position: fixed;
     display: flex;
     flex-direction: column;
+    background: #fff;
 }
 
 .logo-menu {
@@ -256,17 +258,17 @@ a {
 }
 
 .photo {
-    width: 170px;
-    height: 130px;
-    margin: 30px;
-    margin-left: 0;
+    width: 230px;
+    height: 190px;
+    margin: 5px;
 }
 
 .photo-container {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 15%;
-    margin-left: 1%;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .container-alboms{
@@ -276,43 +278,39 @@ a {
 }
 
 .alboms {
-    min-width: 300px;
+    width: 300px;
+    min-width: 100px;
     height: 200px;
     margin: 30px;
     border-radius: 15px;
 }
 
 .albom1 {
-    min-width: 300px;
-    height: 200px;
+   
     background: url("https://s1.1zoom.me/big0/598/313032-Lastochka.jpg");
     background-size: cover;
 }
 
 .albom2 {
-    min-width: 300px;
-    height: 200px;
+   
     background: url("https://wallbox.ru/wallpapers/main/201151/koshki-f60c1e13bc32.jpg");
     background-size: cover;
 }
 
 .albom3 {
-    min-width: 300px;
-    height: 200px;
+    
     background: url("https://media.kg-portal.ru/tv/h/humans/images/humans_10.jpg");
     background-size: cover;
 }
 
 .albom4 {
-    min-width: 300px;
-    height: 200px;
+   
     background: url("https://www.zastavki.com/pictures/1920x1200/2009/Drawn_wallpapers_junior_artist_World_016614_.jpg");
     background-size: cover;
 }
 
 .albom5 {
-    min-width: 300px;
-    height: 200px;
+    
     background: url("https://losko.ru/wp-content/uploads/2014/09/Project_logo_02.png");
     background-size: cover;
 }
@@ -370,6 +368,22 @@ a {
     display: none;
 }
 
+.photo-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5 );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
 @media (max-width: 500px) {
     .menu {
         display: none;
@@ -381,7 +395,7 @@ a {
     .item--header2 {
         padding: 10px;
         margin: 0;
-        font-size: 10px;
+        font-size: 12px;
         margin-right: 60px;
     }
     .item--header {
@@ -395,23 +409,33 @@ a {
 
     .content {
         margin: 0;
-        padding: 4px;
+        padding: 0px;
         padding-left: 20px;
     }
 
-    .photo {
-        width: 80px;
-        height: 60px;
-        margin: 5px;
+    .container-alboms {
+        padding: 0;
     }
+
+    .photo {
+        width: 100px;
+        height: 80px;
+        margin: 2px;
+        
+    }
+
+    
+
     .photo-container {
-        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .separator {
         font-size: 20px;
         width: 100px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-left: 30px;
     }
 
     .togle-button {
@@ -436,5 +460,27 @@ a {
     .logo {
         color: #acac00;
         text-align: center;
+    }
+    .alboms {
+        width: 180px;
+        height: 150px;
+        margin: 6px;
+    }
+
+    .container-alboms {
+        margin-top: 30px;
+    }
+
+    .head--wrapper {
+        justify-content: flex-start;
+        
+    }
+
+    .photo-container {
+        margin-left: 30px;
+    }
+
+    .content {
+        padding-left: 0px;
     }
 }
