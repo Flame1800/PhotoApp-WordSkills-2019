@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <title>Photo Service</title>
+</head>
+
+<body>  
+
+        <div class="toggle-photo">
+            <input type="text" class="name-photo" placeholder="Введие название">
+        </div>
+   
+        <section class="header">
+            <div class="main-logo"> VITALYA TECHNOLOGIES 
+                <br> <span class="ph">PHOTO SERVICE</span> </div>
+            <div class="item">
+                    <input type="text" class="search" placeholder="Поиск">
+                    <a href="#" class="btn-files">Выбрать</a>
+                    <a href="#" class="btn-files">Загрузить</a>
+            </div>
+           
+            <a href="#" class="user">
+                <div class="photo"></div>
+
+                <div class="toggle-user"></div>
+
+            </a>
+        </section>
+
+        <section class="menu toggle-menu">
+            <a href="photo.html" class="btn-icon">
+                <div class="icon1"></div>
+                <div class="name">Фото</div>
+            </a>
+            <a href="alboms.html" class="btn-icon">
+                <div class="icon2"></div>
+                <div class="name">Альбомы</div>
+            </a>
+            <a href="our-photos.html" class="btn-icon">
+                <div class="icon3"></div>
+                <div class="name">Общие <br> фото</div>
+            </a>
+        </section>
+        
+        <section class="content">
+            <span class="separator">
+                Синий
+            </span>
+
+            <div class="photo-container photo-container1"></div>
+
+            <span class="separator">
+                Зеленый
+            </span>
+
+            <div class="photo-container photo-container2"></div>
+
+            <span class="separator">
+                Красный
+            </span>
+
+            <div class="photo-container photo-container3"></div>
+        </section>
+    
+    <script src="../photo-api.js"></script>
+    <script src="../scripts.js"></script>
+</body>
+
+</html>
