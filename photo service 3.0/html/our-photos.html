@@ -9,85 +9,65 @@
     <title>Photo Service</title>
 </head>
 
-<body>
-    <div class="main-container">
-        <section class="menu  togle-menu">
-            <div class="logo-menu">
-                VITALYA 
-                TECHNOLOGIES
-            </div>
+<body>  
 
-            <div class="account">
-                <div class="name">RUSLAN SHAFICOV</div>
-                <div class="friends--list">
-                    <span class="title--friends">ДРУЗЬЯ</span>
-                    <div class="item">
-                        <div class="photo--item"></div>
-                        <div class="item2">
-                            <div class="name--item">Милена Городова</div>
-                            <div class="descr--item">стажер, работа</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="toggle-photo">
+            <input type="text" class="name-photo" placeholder="Введие название">
+        </div>
+   
+        <section class="header">
+            <div class="main-logo"> VITALYA TECHNOLOGIES 
+                <br> <span class="ph">PHOTO SERVICE</span> </div>
+            <div class="item">
+                    <input type="text" class="search" placeholder="Поиск">
+                    <a href="#" class="btn-files">Выбрать</a>
+                    <a href="#" class="btn-files">Загрузить</a>
             </div>
-            <div class="wrap-menu">
-                <a href="log.html" class="exit-btn">выйти</a>
-                <input type="text" class="search" placeholder="Поиск">
-                <a href="#" class="load-btn">ЗАГРУЗИТЬ ФОТО</a>
-                <a href="#" class="select-btn">ВЫБРАТЬ ФОТО</a>
-            </div>
+           
+            <a href="#" class="user">
+                <div class="photo"></div>
 
+                <div class="toggle-user"></div>
 
-            <span class="autor">Design by Ruslan Shaficov</span>
+            </a>
         </section>
 
-        <div class="container-separator">
+        <section class="menu toggle-menu">
+            <a href="photo.html" class="btn-icon">
+                <div class="icon1"></div>
+                <div class="name">Фото</div>
+            </a>
+            <a href="alboms.html" class="btn-icon">
+                <div class="icon2"></div>
+                <div class="name">Альбомы</div>
+            </a>
+            <a href="our-photos.html" class="btn-icon">
+                <div class="icon3"></div>
+                <div class="name">Общие <br> фото</div>
+            </a>
+        </section>
+        
+        <section class="content">
+            <span class="separator">
+                Синий
+            </span>
 
-            <section class="header">
-                <div class="head--wrapper">
-                        <a href="#" class="togle-button">
-                                |||
-                            </a>
-                    <a href="photo.html" class="item--header">ФОТО</a>
-                    <a href="alboms.html" class="item--header">АЛЬБОМЫ</a>
-                    <a href="our-photos.html" class="item--header2">ЛЕНТА</a>
-                </div>
+            <div class="photo-container photo-container1"></div>
 
-                <section class="content our-photos-bg">
-                    <div class="message">
-                        <div class="title--message">У вас еще нет общих фото.</div>
-                        <div class="text--message">
-                                Вы можете создать их если пригасите друзей в общий доступ, который находиться в левом меню, 
-                                или вас могут в него кто-нибудь пригласить.
-                        </div>
-                        <a href="#" class="btn-our-photos">Создать общий доступ</a>
-                    </div>
+            <span class="separator">
+                Зеленый
+            </span>
 
-                    <div class="container-our-photos">
-                            <span class="separator">
-                                    Пейзаж
-                                </span>
-            
-                                <div class="photo-container photo-container1"></div>
-                                
-                                <span class="separator">
-                                    Отдых
-                                </span>
-            
-                                <div class="photo-container photo-container2"></div>
-            
-                                <span class="separator">
-                                    Животные
-                                </span>
-            
-                                <div class="photo-container photo-container3"></div>
-                    </div>
-                </section>
-            </section>
-        </div>
-    </div>
+            <div class="photo-container photo-container2"></div>
 
-    <script src="../async-scripts.js"></script>
+            <span class="separator">
+                Красный
+            </span>
+
+            <div class="photo-container photo-container3"></div>
+        </section>
+    
+    <script src="../photo-api.js"></script>
     <script src="../scripts.js"></script>
 </body>
 
